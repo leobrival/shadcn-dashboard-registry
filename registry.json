@@ -1,0 +1,128 @@
+{
+	"$schema": "https://ui.shadcn.com/schema/registry.json",
+	"name": "shadcn-dashboard-registry",
+	"homepage": "https://leobrival.github.io/shadcn-dashboard-registry",
+	"items": [
+		{
+			"name": "dashboard-sidebar",
+			"type": "registry:block",
+			"title": "Dashboard Sidebar",
+			"description": "A collapsible sidebar with navigation, user menu, and theme support for dashboards.",
+			"registryDependencies": [
+				"sidebar",
+				"button",
+				"avatar",
+				"dropdown-menu",
+				"tooltip",
+				"collapsible",
+				"separator"
+			],
+			"dependencies": ["lucide-react"],
+			"files": [
+				{
+					"path": "registry/neutral/dashboard-sidebar/dashboard-sidebar.tsx",
+					"type": "registry:component"
+				},
+				{
+					"path": "registry/neutral/dashboard-sidebar/nav-main.tsx",
+					"type": "registry:component"
+				},
+				{
+					"path": "registry/neutral/dashboard-sidebar/nav-user.tsx",
+					"type": "registry:component"
+				}
+			]
+		},
+		{
+			"name": "dashboard-header",
+			"type": "registry:block",
+			"title": "Dashboard Header",
+			"description": "A responsive header with breadcrumbs, search, and user actions for dashboards.",
+			"registryDependencies": ["button", "avatar", "dropdown-menu", "separator"],
+			"dependencies": ["lucide-react"],
+			"files": [
+				{
+					"path": "registry/neutral/dashboard-header/dashboard-header.tsx",
+					"type": "registry:component"
+				}
+			]
+		},
+		{
+			"name": "dashboard-layout",
+			"type": "registry:block",
+			"title": "Dashboard Layout",
+			"description": "A complete dashboard layout with sidebar, header, and content area.",
+			"registryDependencies": [
+				"sidebar",
+				"button",
+				"avatar",
+				"dropdown-menu",
+				"tooltip",
+				"separator"
+			],
+			"dependencies": ["lucide-react"],
+			"files": [
+				{
+					"path": "registry/neutral/dashboard-layout/dashboard-layout.tsx",
+					"type": "registry:component"
+				}
+			]
+		},
+		{
+			"name": "stats-card",
+			"type": "registry:block",
+			"title": "Stats Card",
+			"description": "A card component for displaying statistics with icon, value, and trend indicator.",
+			"registryDependencies": ["card"],
+			"dependencies": ["lucide-react"],
+			"files": [
+				{
+					"path": "registry/neutral/stats-card/stats-card.tsx",
+					"type": "registry:component"
+				}
+			]
+		},
+		{
+			"name": "data-table",
+			"type": "registry:block",
+			"title": "Data Table",
+			"description": "A feature-rich data table with sorting, filtering, pagination, and row actions.",
+			"registryDependencies": [
+				"table",
+				"button",
+				"input",
+				"dropdown-menu",
+				"select"
+			],
+			"dependencies": ["@tanstack/react-table", "lucide-react"],
+			"files": [
+				{
+					"path": "registry/neutral/data-table/data-table.tsx",
+					"type": "registry:component"
+				},
+				{
+					"path": "registry/neutral/data-table/data-table-pagination.tsx",
+					"type": "registry:component"
+				},
+				{
+					"path": "registry/neutral/data-table/data-table-column-header.tsx",
+					"type": "registry:component"
+				}
+			]
+		},
+		{
+			"name": "empty-state",
+			"type": "registry:block",
+			"title": "Empty State",
+			"description": "A placeholder component for empty data states with icon, message, and action button.",
+			"registryDependencies": ["button"],
+			"dependencies": ["lucide-react"],
+			"files": [
+				{
+					"path": "registry/neutral/empty-state/empty-state.tsx",
+					"type": "registry:component"
+				}
+			]
+		}
+	]
+}
